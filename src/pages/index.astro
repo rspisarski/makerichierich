@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets"
+import me from '../../public/its-me.jpg'
+import myVenmo from '../../public/my-venmo.jpg'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<title>Make Richie Rich</title>
+	</head>
+	<body>
+	<section class="py-[120px] flex flex-col items-center justify-center">
+		<div class="container px-6 mx-auto text-center">
+			<h1 class="text-2xl lg:text-5xl"><span class="text-green-500 text-2xl">$$$</span> Make Richie Rich <span class="text-green-500 text-2xl">$$$</span></h1>
+			<div class="flex-col lg:flex-row justify-center flex gap-10 mt-12 mb-8">
+				<div class="p-6 bg-white shadow-2xl rounded-xl">
+					<Image src={me} alt="its me" class="h-[300px] w-full object-contain"/>
+				</div>
+				<div class="p-6 bg-white shadow-2xl rounded-xl">
+					<Image src={myVenmo} alt="its me" class="h-[300px] w-full object-contain"/>
+					<p class="mt-4 mb-0">Scan Me to gift me $1</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-slate-100 py-[120px]">
+	<div class="container">
+		<div class="w-full prose-sm lg:prose-lg px-6 max-w-none text-center">
+			<h1 class="clamp">Correcting the "Richie Rich" Label</h1>
+			<div class="text-justify">
+				<p>My name is Richard, and I had a dream - a dream to retire early and live a life of comfort and leisure. But there was a unique twist to my dream. I couldn't stand the common practice of people calling all Richards "Richie Rich." To me, it wasn't just a nickname; it was an unfair label that hurt not only me but many others who shared my name.</p>
+				
+				<p>So, I decided to take matters into my own hands. I'm launching a passionate social media campaign to shed light on the injustice of the "Richie Rich" label. I will explain how it perpetuated stereotypes, imposed unrealistic expectations, and create an image that didn't reflect the reality of our lives.</p>
+				
+				<p>As my campaign gain traction, people from all walks of life will join my cause. They will rally behind me, not just to support my cause, but to pay their "tribute" for having unknowingly contributed to the problem over the years. The funds started pouring in, providing the financial means I need to achieve my retirement goal.</p>
+				
+				<p>As My message begins to change perceptions. Individuals and businesses, moved by my cause, will reconsider how they address Richards. Many will start to drop the "Richie Rich" label from their vocabulary as they realize the harm it has caused.</p>
+				
+				<p>And, you know what? If I ever reached my goal of gifts received, I would even be willing to accept the "Richie Rich" name as a form of recognition for my efforts. In the end, I managed to retire early and live a life of comfort, all while highlighting the impact of the "Richie Rich" label on my life and the lives of countless other Richards. My retirement was well-earned, justified, and brought about a change in how people saw and addressed us. The world had transformed for the better, and I could finally enjoy the fruits of my labor and dreams.</p>
+			</div>
+		</div>
+	</div>
+	</section>
+	</body>
+</html>
